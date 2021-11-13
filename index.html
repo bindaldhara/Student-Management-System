@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Student Management System</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<CENTER><h2>Student Records</h2></CENTER>
+   
+    <table>
+        <tr>
+            <td>
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                	<h3>Student Form</h3>
+                    <div>
+                        <label>Full Name</label>
+                        <label class="validation-error hide" id="userNamevalidationError">Required</label>
+                        <input type="text" name="userName" id="userName" placeholder="Enter the student Name">
+                    </div>
+                    <div>
+                        <label>Rollno</label>
+                        <label class="validation-error hide" id="rollNovalidationError" >Required</label>
+                        <input type="number" name="rollNo" id="rollNo" placeholder="Enter the Roll number">
+                    </div>
+                    <div>
+                        <label>Age</label>
+                        <label class="validation-error hide" id="agevalidationError">Required</label>
+                        <input type="number" name="age" id="age" placeholder="Enter the Age">
+                    </div>
+                    <div>
+                        <label>Course pursuing</label>
+                        <label class="validation-error hide" id="CoursevalidationError">Required</label>
+                        <input type="text" name="course" id="course" placeholder="Enter the Course currently enrolled in">
+                    </div>
+                    <div>
+                        <label>Contact number</label>
+                        <label class="validation-error hide" id="ContactvalidationError">Required</label>
+                        <input type="number" name="cn" id="cn" placeholder="Enter the phone number">
+                    </div>
+                    
+                    <div class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+            </td>
+            <td>
+                <table class="list" id="stdlist" style="background-color:  #eca452;;">
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Roll no</th>
+                            <th>Age</th>
+                            <th>Course</th>
+                            <th>Contact Number</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                   
+                    <tbody>
+                    </tbody>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+body > table{
+    width: 100%;
+    background-image:linear-gradient(120deg,#ff6b6b,#5f27cd);
+}
+table{
+    border-collapse: collapse;
+    text-align: center;
+}
+td, th {
+    border: 4px solid #e6e0e0;
+    text-align: left;
+    padding: 10px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #afa9a9;
+}
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 12px 30px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 5px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+input[type=submit]{
+    width: 35%;
+    background-color: #afa9a9;
+    color: rgb(0, 0, 0);
+    padding: 12px 30px;
+    margin: 8px 0;
+    border-radius: 10px;
+    cursor: pointer;
+}
+table.list{
+    width:100%;
+    text-align: center;
+}
+table.list td{
+    text-align: center;
+}
+
+form{
+    background-color: #eca452;
+    padding: 12px;
+}
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #e62626;
+    margin-right: 5px;
+}
+label.validation-error{
+    color:   red;
+    margin-left: 50%;
+}
+form div.form-action-buttons{
+    text-align: center;
+}
+
+.hide{
+    display:none;
+}
